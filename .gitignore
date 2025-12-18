@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+compass_project/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project specific - keep data structure but ignore large files
+data/raw/*.csv
+data/processed/*.csv
+data/tagging/*.csv
+
+# Keep example/sample files
+!data/raw/README.md
+!data/processed/README.md
+!data/tagging/README.md
+
+# Temporary files
+*.log
+*.tmp
+.cache/
+
+# Outputs - keep structure, ignore generated files
+outputs/visualizations/*.png
+outputs/reports/*.txt
+!outputs/visualizations/README.md
+!outputs/reports/README.md
+
