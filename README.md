@@ -215,17 +215,6 @@ Includes:
 
 ---
 
-## 🤝 Contributing | תרומה
-
-Contributions are welcome! Please:
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
 ## 📝 License | רישיון
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -236,22 +225,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Tehila Moe**
 
-- GitHub: [@tehila99](https://github.com/tehila99)
-- Project: [compass-project](https://github.com/tehila99/compass-project)
+- 🔗 GitHub: [@tehila99](https://github.com/tehila99)
+- 📂 Repository: [compass-project](https://github.com/tehila99/compass-project)
 
 ---
 
-## 🙏 Acknowledgments | תודות
+## 📌 About This Project | אודות הפרויקט
 
-- Built as part of an intelligence data analysis assignment
-- Special thanks to the reviewers and mentors
-
----
-
-## 📧 Contact | יצירת קשר
-
-For questions or feedback, please open an issue or contact via email.
+This project was developed as part of an intelligence data analysis assignment, demonstrating:
+- ✅ End-to-end data pipeline development
+- ✅ NLP-based information extraction from Hebrew text
+- ✅ Interactive data visualization with Plotly Dash
+- ✅ Statistical analysis and model evaluation
+- ✅ Professional documentation and code quality
 
 ---
 
-**⭐ If you find this project useful, please consider giving it a star!**
+**⭐ If you find this project interesting, please consider giving it a star!**
