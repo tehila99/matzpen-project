@@ -223,10 +223,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author | יוצר
 
-**Tehila Moe**
+**Tehila Hager**
 
 - 🔗 GitHub: [@tehila99](https://github.com/tehila99)
 - 📂 Repository: [compass-project](https://github.com/tehila99/compass-project)
+- 📧 Email: t5807679@gmail.com
 
 ---
 
