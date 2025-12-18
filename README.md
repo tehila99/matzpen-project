@@ -156,6 +156,53 @@ All 5 False Positives (100%) originate from **D4 reliability** reports ("require
 
 ---
 
+## 📸 Visual Gallery | גלריית תמונות
+
+### Stage 2: Dashboard Visualizations | ויזואליזציות דשבורד
+
+<details>
+<summary>📊 Click to view dashboard screenshots (6 visualizations)</summary>
+
+#### 1. Timeline Analysis
+![Timeline](outputs/visualizations/01_timeline.png)
+
+#### 2. Urgency Distribution
+![Urgency](outputs/visualizations/02_urgency_distribution.png)
+
+#### 3. Reliability Scores
+![Reliability Pie](outputs/visualizations/03_reliability_pie.png)
+![Reliability Bar](outputs/visualizations/04_reliability_bar.png)
+
+#### 4. Geographic Analysis
+![Geographic Comparison](outputs/visualizations/05_geographic_comparison.png)
+![Sector Geographic](outputs/visualizations/06_sector_geographic.png)
+
+</details>
+
+### Stage 5: Performance Evaluation | הערכת ביצועים
+
+<details>
+<summary>📈 Click to view performance charts (5 visualizations)</summary>
+
+#### Confusion Matrix
+![Confusion Matrix](outputs/visualizations/07_confusion_matrix.png)
+
+#### Performance Metrics
+![Performance Metrics](outputs/visualizations/08_performance_metrics.png)
+
+#### Sector Performance
+![Sector Performance](outputs/visualizations/09_sector_performance.png)
+
+#### Prediction Distribution
+![Prediction Distribution](outputs/visualizations/10_prediction_distribution.png)
+
+#### Urgency Comparison
+![Urgency Comparison](outputs/visualizations/11_urgency_comparison.png)
+
+</details>
+
+---
+
 ## 📖 Documentation | תיעוד
 
 **Full Hebrew documentation:** [`COMPASS_PROJECT_FULL_DOCUMENTATION.md`](./COMPASS_PROJECT_FULL_DOCUMENTATION.md)

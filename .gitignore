@@ -58,9 +58,8 @@ data/tagging/*.csv
 *.tmp
 .cache/
 
-# Outputs - keep structure, ignore generated files
-outputs/visualizations/*.png
+# Outputs - keep structure
+# Keep visualizations for GitHub showcase
 outputs/reports/*.txt
-!outputs/visualizations/README.md
 !outputs/reports/README.md
 
