@@ -35,8 +35,8 @@ pip
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/YOUR_USERNAME/compass-project.git
-cd compass-project
+git clone https://github.com/tehila99/compass-project-.git
+cd compass-project-
 ```
 
 2. **Create virtual environment:**
@@ -189,8 +189,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Tehila Moe**
 
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
+- GitHub: [@tehila99](https://github.com/tehila99)
+- Project: [compass-project](https://github.com/tehila99/compass-project-)
 
 ---
 
