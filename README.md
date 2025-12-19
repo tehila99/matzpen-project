@@ -41,11 +41,11 @@ cd compass-project
 
 2. **Create virtual environment:**
 ```bash
-python -m venv compass_env
+python -m venv venv
 # Windows:
-compass_env\Scripts\activate
+venv\Scripts\activate
 # Linux/Mac:
-source compass_env/bin/activate
+source venv/bin/activate
 ```
 
 3. **Install dependencies:**
