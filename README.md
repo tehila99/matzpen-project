@@ -1,4 +1,4 @@
-# 🧭 Project Compass | פרויקט המצפן
+# 🧭 Project Matzpen | פרויקט המצפן
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -12,7 +12,7 @@
 
 ## 📋 Overview | סקירה
 
-Project Compass is a complete data science pipeline that:
+Project Matzpen is a complete data science pipeline that:
 - ✅ Cleans and preprocesses 10,000 raw Hebrew intelligence reports
 - 📊 Provides an interactive Plotly Dash dashboard for data exploration
 - 🎯 Extracts geographic coordinates using NLP-based anchor word patterns
@@ -35,8 +35,8 @@ pip
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/tehila99/compass-project.git
-cd compass-project
+git clone https://github.com/tehila99/matzpen-project.git
+cd matzpen-project
 ```
 
 2. **Create virtual environment:**
@@ -58,7 +58,7 @@ pip install -r requirements.txt
 ## 📂 Project Structure | מבנה הפרויקט
 
 ```
-compass-project/
+matzpen-project/
 │
 ├── data/
 │   ├── raw/                          # Raw mission data (not included)
@@ -73,13 +73,13 @@ compass-project/
 │   └── extract_errors.py            # Error analysis tool
 │
 ├── dashboards/
-│   └── compass_dashboard.py         # Stage 2: Interactive dashboard
+│   └── matzpen_dashboard.py         # Stage 2: Interactive dashboard
 │
 ├── outputs/
 │   ├── reports/                     # Generated reports
 │   └── visualizations/              # Performance charts
 │
-├── COMPASS_PROJECT_FULL_DOCUMENTATION.md  # Complete Hebrew documentation
+├── MATZPEN_PROJECT_FULL_DOCUMENTATION.md  # Complete Hebrew documentation
 ├── requirements.txt                 # Python dependencies
 └── README.md                        # This file
 ```
@@ -98,7 +98,7 @@ python src/data_cleansing.py
 
 ### Stage 2: Interactive Dashboard | דשבורד אינטראקטיבי
 ```bash
-python dashboards/compass_dashboard.py
+python dashboards/matzpen_dashboard.py
 ```
 - **Access:** http://127.0.0.1:8050/
 - 6 interactive visualizations
@@ -206,7 +206,7 @@ All 5 False Positives (100%) originate from **D4 reliability** reports ("require
 
 ## 📖 Documentation | תיעוד
 
-**Full Hebrew documentation:** [`COMPASS_PROJECT_FULL_DOCUMENTATION.md`](./COMPASS_PROJECT_FULL_DOCUMENTATION.md)
+**Full Hebrew documentation:** [`MATZPEN_PROJECT_FULL_DOCUMENTATION.md`](./MATZPEN_PROJECT_FULL_DOCUMENTATION.md)
 
 Includes:
 - ✅ Detailed methodology for each stage
@@ -227,7 +227,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Tehila Hager**
 
 - 🔗 GitHub: [@tehila99](https://github.com/tehila99)
-- 📂 Repository: [compass-project](https://github.com/tehila99/compass-project)
+- 📂 Repository: [matzpen-project](https://github.com/tehila99/matzpen-project)
 - 📧 Email: t5807679@gmail.com
 
 ---

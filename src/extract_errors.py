@@ -2,7 +2,7 @@
 Extract all 11 errors from the tagged data and create a focused CSV file
 for manual inspection and analysis.
 
-Author: Project Compass
+Author: Project Matzpen
 Date: December 2025
 """
 

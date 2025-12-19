@@ -9,7 +9,7 @@ Features:
 3. Intelligence Potential: Geographic keyword analysis
 4. Drill-down: Filters and interactive table
 
-Author: Compass Project
+Author: Matzpen Project
 Date: December 2025
 """
 
@@ -23,7 +23,7 @@ import re
 
 # Initialize the Dash app
 app = Dash(__name__, suppress_callback_exceptions=True)
-app.title = "Compass Intelligence Dashboard"
+app.title = "Matzpen Intelligence Dashboard"
 
 
 def load_data():
@@ -76,7 +76,7 @@ color_scheme = {
 app.layout = html.Div([
     # Header
     html.Div([
-        html.H1("Compass Intelligence Dashboard", style={'textAlign': 'center', 'color': '#2c3e50', 'marginBottom': '10px'}),
+        html.H1("Matzpen Intelligence Dashboard", style={'textAlign': 'center', 'color': '#2c3e50', 'marginBottom': '10px'}),
         html.P("Interactive Analysis of Intelligence Reports", 
                style={'textAlign': 'center', 'color': '#7f8c8d', 'fontSize': '18px'}),
     ], style={'backgroundColor': '#ecf0f1', 'padding': '20px', 'marginBottom': '20px'}),
@@ -381,7 +381,7 @@ def update_dashboard(sector, unit, urgency):
 # Run the app
 if __name__ == '__main__':
     print("\n" + "="*60)
-    print("Starting Compass Intelligence Dashboard")
+    print("Starting Matzpen Intelligence Dashboard")
     print("="*60)
     print("\nDashboard features:")
     print("  1. Load Status: Report distribution by date and urgency")

@@ -4,7 +4,7 @@ Generate Static Visualizations
 This script generates static visualizations of the dashboard charts
 and saves them as images for documentation purposes.
 
-Author: Compass Project
+Author: Matzpen Project
 Date: December 2025
 """
 

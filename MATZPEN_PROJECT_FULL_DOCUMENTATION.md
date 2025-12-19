@@ -1,7 +1,7 @@
-# פרויקט המצפן (Compass Project) - תיעוד מלא
+# פרויקט המצפן (Matzpen Project) - תיעוד מלא
 
 ## פרטי הפרויקט
-- **שם הפרויקט**: פרויקט המצפן (Project Compass)
+- **שם הפרויקט**: פרויקט המצפן (Project Matzpen)
 - **מטרה**: הקמת תהליך נתונים מקצה-לקצה לחילוץ נקודות ציון (נ.צ) מדיווחים מודיעיניים
 - **נתונים**: 10,000 דיווחים טקסטואליים גולמיים
 - **תאריך ביצוע**: דצמבר 2025
@@ -78,7 +78,7 @@
     ┌───────────────────────────┐   ┌─────────────────────────────┐
     │  📊 שלב ב': דשבורד        │   │  ⚙️ שלב ג': חילוץ נ.צ        │
     │  EDA & Visualization      │   │  Feature Engineering         │
-    │  compass_dashboard.py     │   │  feature_engineering.py      │
+    │  matzpen_dashboard.py     │   │  feature_engineering.py      │
     │                           │   │                              │
     │  • 6 ויזואליזציות         │   │  • 5 דפוסי Regex             │
     │  • מסננים אינטראקטיביים   │   │  • מילות עוגן               │
@@ -133,7 +133,7 @@
 | דרישה מהמפרט | קובץ מימוש | קובץ פלט | סטטוס | תיאור |
 |-------------|-----------|---------|-------|-------|
 | **שלב א': טיוב וניקוי** | `src/data_cleansing.py` | `data/processed/clean_reports.csv` | ✅ הושלם | סינון 2,678 דיווחים לא תקינים/לא אמינים |
-| **שלב ב': דשבורד** | `dashboards/compass_dashboard.py` | Web App: `http://127.0.0.1:8050` | ✅ הושלם | 6 ויזואליזציות + Drill-down + Plotly Dash |
+| **שלב ב': דשבורד** | `dashboards/matzpen_dashboard.py` | Web App: `http://127.0.0.1:8050` | ✅ הושלם | 6 ויזואליזציות + Drill-down + Plotly Dash |
 | **שלב ג': חילוץ נ.צ** | `src/feature_engineering.py` | `data/processed/reports_with_coordinates.csv` | ✅ הושלם | חילוץ 1,448 נ.צ באמצעות 5 דפוסי Regex |
 | **שלב ד': תיוג QA** | `src/tagging_generator.py` | `data/tagging/tagging_task.csv` | ✅ הושלם | 100 דיווחים מרובדים למתייגים אנושיים |
 | **שלב ה': הערכת ביצועים** | `src/performance_eval.py` | `performance_evaluation_report.txt` + 5 גרפים | ✅ הושלם | 89% Accuracy, ניתוח מפורט לפי מגזר ואמינות |
@@ -362,11 +362,11 @@ sector_dist = df_clean['Sector'].value_counts()
 ## כלים בשימוש
 - **Plotly Dash 2.14.2** - framework לבניית דשבורד אינטראקטיבי
 - **Plotly Express 5.18.0** - ספריית ויזואליזציה
-- קובץ קוד: `dashboards/compass_dashboard.py` (396 שורות)
+- קובץ קוד: `dashboards/matzpen_dashboard.py` (396 שורות)
 
 ## הרצת הדשבורד
 ```bash
-python dashboards/compass_dashboard.py
+python dashboards/matzpen_dashboard.py
 ```
 לאחר ההרצה, הדשבורד יהיה זמין בדפדפן בכתובת: **http://127.0.0.1:8050/**
 
@@ -736,7 +736,7 @@ data_table = dash_table.DataTable(
 
 ### קבצים שנוצרו
 
-1. **קובץ קוד**: `dashboards/compass_dashboard.py` (396 שורות)
+1. **קובץ קוד**: `dashboards/matzpen_dashboard.py` (396 שורות)
 2. **מדריך משתמש**: `outputs/reports/dashboard_guide.md`
 3. **צילומי מסך**: 6 קבצי PNG ב-`outputs/visualizations/`
 
@@ -765,10 +765,10 @@ data_table = dash_table.DataTable(
 
 ```bash
 # 1. הפעלת סביבה וירטואלית
-.\compass_project\Scripts\activate
+.\venv\Scripts\activate
 
 # 2. הרצת הדשבורד
-python dashboards/compass_dashboard.py
+python dashboards/matzpen_dashboard.py
 
 # 3. גישה דרך דפדפן
 http://127.0.0.1:8050/
@@ -1463,7 +1463,7 @@ for rel in sorted(worst_errors['Reliability_Score'].unique()):
 ```
 C:\Users\IMOE001\Downloads\Home Assignment matzpen\
 │
-├── 📄 COMPASS_PROJECT_FULL_DOCUMENTATION.md  ← **⭐ המסמך המרכזי - קרא אותי!**
+├── 📄 MATZPEN_PROJECT_FULL_DOCUMENTATION.md  ← **⭐ המסמך המרכזי - קרא אותי!**
 ├── 📄 README.md                               ← הוראות התקנה והרצה מהירות
 ├── 📄 requirements.txt                        ← תלויות Python
 │
@@ -1488,7 +1488,7 @@ C:\Users\IMOE001\Downloads\Home Assignment matzpen\
 │   └── generate_visualizations.py            ← כלי עזר: צילומי מסך
 │
 ├── 📁 dashboards/
-│   └── compass_dashboard.py                  ← שלב ב': Plotly Dash (396 שורות)
+│   └── matzpen_dashboard.py                  ← שלב ב': Plotly Dash (396 שורות)
 │
 ├── 📁 outputs/
 │   ├── visualizations/                       ← ✨ 6 גרפים (שמות מעודכנים!)
@@ -1506,18 +1506,18 @@ C:\Users\IMOE001\Downloads\Home Assignment matzpen\
 │       ├── errors_analysis_11_cases.csv      ← ⭐ ניתוח מפורט של 11 השגיאות
 │       └── anchor_words_analysis.txt         ← ניתוח מילות עוגן
 │
-└── 📁 compass_project/                       ← סביבה וירטואלית (venv)
+└── 📁 venv/                       ← סביבה וירטואלית (venv)
 ```
 
 ## רשימת קבצים מלאה
 
 ### 📝 תיעוד (2 קבצים)
-1. **`COMPASS_PROJECT_FULL_DOCUMENTATION.md`** ⭐ - **המסמך המרכזי המלא** (כולל כל 5 השלבים)
+1. **`MATZPEN_PROJECT_FULL_DOCUMENTATION.md`** ⭐ - **המסמך המרכזי המלא** (כולל כל 5 השלבים)
 2. `README.md` - הוראות התקנה והרצה מהירות (אנגלית)
 
 ### 💻 קבצי קוד (6 קבצים)
 1. `src/data_cleansing.py` - שלב א': ניקוי נתונים (279 שורות)
-2. `dashboards/compass_dashboard.py` - שלב ב': דשבורד אינטראקטיבי (396 שורות)
+2. `dashboards/matzpen_dashboard.py` - שלב ב': דשבורד אינטראקטיבי (396 שורות)
 3. `src/feature_engineering.py` - שלב ג': חילוץ נ.צ (345 שורות)
 4. `src/tagging_generator.py` - שלב ד': יצירת מדגם תיוג
 5. `src/performance_eval.py` - שלב ה': הערכת ביצועים (89% דיוק) + ניתוח צולב
@@ -1557,7 +1557,7 @@ C:\Users\IMOE001\Downloads\Home Assignment matzpen\
 
 ### ⚙️ קבצי תצורה (2)
 1. `requirements.txt` - רשימת חבילות Python עם גרסאות
-2. `compass_project/` - סביבה וירטואלית מלאה
+2. `venv/` - סביבה וירטואלית מלאה
 
 ### 📚 מפרט מקורי (1)
 1. `docs/משימת_בית_מקצועית.docx` - מסמך אפיון מקורי
@@ -1573,14 +1573,14 @@ C:\Users\IMOE001\Downloads\Home Assignment matzpen\
 ### התקנה ראשונית (פעם אחת)
 ```bash
 cd "C:\Users\IMOE001\Downloads\Home Assignment matzpen"
-.\compass_project\Scripts\activate
+.\venv\Scripts\activate
 # כבר מותקן - אבל אם צריך:
 # pip install -r requirements.txt
 ```
 
 ### שלב א': ניקוי נתונים
 ```bash
-.\compass_project\Scripts\activate
+.\venv\Scripts\activate
 python src/data_cleansing.py
 # ✅ יוצר: data/processed/clean_reports.csv
 # ✅ יוצר: outputs/reports/data_cleansing_report.txt
@@ -1588,15 +1588,15 @@ python src/data_cleansing.py
 
 ### שלב ב': דשבורד אינטראקטיבי
 ```bash
-.\compass_project\Scripts\activate
-python dashboards/compass_dashboard.py
+.\venv\Scripts\activate
+python dashboards/matzpen_dashboard.py
 # 🌐 פתח בדפדפן: http://127.0.0.1:8050/
 # ✅ 6 ויזואליזציות + מסננים + Drill-down
 ```
 
 ### שלב ג': חילוץ נ.צ
 ```bash
-.\compass_project\Scripts\activate
+.\venv\Scripts\activate
 python src/feature_engineering.py
 # ✅ יוצר: data/processed/reports_with_coordinates.csv
 # ✅ יוצר: outputs/reports/feature_engineering_report.txt
@@ -1604,7 +1604,7 @@ python src/feature_engineering.py
 
 ### שלב ד': יצירת מדגם תיוג
 ```bash
-.\compass_project\Scripts\activate
+.\venv\Scripts\activate
 python src/tagging_generator.py
 # ✅ יוצר: data/tagging/tagging_task.csv (100 דיווחים)
 # ✅ יוצר: outputs/reports/tagging_sample_report.txt
@@ -1612,7 +1612,7 @@ python src/tagging_generator.py
 
 ### שלב ה': הערכת ביצועים
 ```bash
-.\compass_project\Scripts\activate
+.\venv\Scripts\activate
 python src/performance_eval.py
 # ✅ יוצר: outputs/reports/performance_evaluation_report.txt (199 שורות)
 # ✅ כולל ניתוח צולב: גזרה × אמינות
@@ -1628,12 +1628,12 @@ python src/analyze_sector_reliability.py
 
 ### הרצה מהירה של כל השלבים
 ```bash
-.\compass_project\Scripts\activate
+.\venv\Scripts\activate
 python src/data_cleansing.py
 python src/feature_engineering.py
 python src/tagging_generator.py
 # לסיום: הרץ דשבורד
-python dashboards/compass_dashboard.py
+python dashboards/matzpen_dashboard.py
 ```
 
 ---
@@ -1643,7 +1643,7 @@ python dashboards/compass_dashboard.py
 | שלב | תיאור | קובץ | פלט | סטטוס |
 |-----|-------|------|-----|-------|
 | **א'** | טיוב וניקוי נתונים | `data_cleansing.py` | 7,322 דיווחים | ✅ **100%** |
-| **ב'** | דשבורד ויזואלי | `compass_dashboard.py` | 6 ויזואליזציות | ✅ **100%** |
+| **ב'** | דשבורד ויזואלי | `matzpen_dashboard.py` | 6 ויזואליזציות | ✅ **100%** |
 | **ג'** | חילוץ נ.צ | `feature_engineering.py` | 1,448 נ.צ | ✅ **100%** |
 | **ד'** | מדגם תיוג | `tagging_generator.py` | 100 דיווחים | ✅ **100%** |
 | **ה'** | הערכת ביצועים | `performance_eval.py` | דוח + 5 גרפים | ✅ **100%** |

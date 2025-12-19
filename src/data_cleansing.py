@@ -10,7 +10,7 @@ Filtering Logic:
 4. Save cleaned data to CSV
 5. Generate a detailed cleansing report
 
-Author: Compass Project
+Author: Matzpen Project
 Date: December 2025
 """
 
@@ -139,7 +139,7 @@ def generate_report(stats, df_clean, output_path):
     
     report_lines = []
     report_lines.append("=" * 80)
-    report_lines.append("DATA CLEANSING REPORT - COMPASS PROJECT")
+    report_lines.append("DATA CLEANSING REPORT - MATZPEN PROJECT")
     report_lines.append("=" * 80)
     report_lines.append(f"\nReport Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     report_lines.append("\n")
