@@ -1343,6 +1343,8 @@ for rel in sorted(worst_errors['Reliability_Score'].unique()):
 - נצפו **6 מקרים** של False Negative (המודל החמיץ נ.צ קיימות)
 - יחס **FP:FN של 0.8:1** נראה מאוזן יחסית
 
+**📄 לניתוח מפורט:** ראו קובץ `outputs/reports/errors_analysis_11_cases.csv` המכיל את כל 11 השגיאות עם פרטים מלאים (תוכן, חילוץ, גזרה, אמינות, סוג שגיאה)
+
 ### נקודות חוזק
 ✓ דיוק עקבי בין מגזרים (86-91%)  
 ✓ Precision גבוה (90%) - מעט False Positives  
@@ -1372,7 +1374,8 @@ for rel in sorted(worst_errors['Reliability_Score'].unique()):
 2. `src/create_performance_visualizations.py` - יצירת גרפים
 
 ### דוחות
-1. `outputs/reports/performance_evaluation_report.txt` (199 שורות)
+1. `outputs/reports/performance_evaluation_report.txt` (199 שורות) - דוח מפורט עם כל הניתוחים
+2. `outputs/reports/errors_analysis_11_cases.csv` (11 שורות) - **ניתוח מפורט של כל 11 השגיאות** עם כל הפרטים לבדיקה ידנית
 
 ### ויזואליזציות (5 גרפים)
 1. `07_confusion_matrix.png` - Confusion Matrix Heatmap
@@ -1499,6 +1502,8 @@ C:\Users\IMOE001\Downloads\Home Assignment matzpen\
 │       ├── data_cleansing_report.txt         ← דוח שלב א' (136 שורות)
 │       ├── feature_engineering_report.txt    ← דוח שלב ג' (173 שורות)
 │       ├── tagging_sample_report.txt         ← דוח שלב ד' (170 שורות)
+│       ├── performance_evaluation_report.txt ← דוח שלב ה' (199 שורות)
+│       ├── errors_analysis_11_cases.csv      ← ⭐ ניתוח מפורט של 11 השגיאות
 │       └── anchor_words_analysis.txt         ← ניתוח מילות עוגן
 │
 └── 📁 compass_project/                       ← סביבה וירטואלית (venv)
