@@ -129,6 +129,7 @@ python src/performance_eval.py
 - Performance metrics: 89.0% accuracy, 90.0% precision
 - Error analysis by sector and reliability score
 - **Key Finding:** 100% of False Positives come from D4 (low reliability) sources
+- 📄 **Detailed errors file:** [`errors_analysis_11_cases.csv`](outputs/reports/errors_analysis_11_cases.csv) - All 11 errors with full details for manual inspection
 
 ---
 
